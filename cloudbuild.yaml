@@ -1,6 +1,7 @@
 steps:
 - name: 'gcr.io/kaniko-project/executor:aca3b966a3376c998f4824162912ba5ea04c9d4f'
-args:
- - --destination=gcr.io/chuangw-test/kaniko-tom
- - --cache=true
- - --cache-ttl=8h
+  args:
+  - --context=git://github.com/chuangw6/kaniko-demo.git
+  - --destination=gcr.io/chuangw-test/kaniko-tom
+  - --cache=true
+  - --cache-ttl=8h

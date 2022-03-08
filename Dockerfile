@@ -8,6 +8,6 @@
 # RUN mv /usr/share/nginx/html/index.html /usr/share/nginx/html/old-index.html
 # COPY --from=build /src/public /usr/share/nginx/html
 # EXPOSE 80
-FROM centos
+FROM opensuse/tumbleweed
 COPY quickstart.sh /
 CMD ["bash", "quickstart.sh"]
